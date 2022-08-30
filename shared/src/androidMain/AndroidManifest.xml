@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.rasel.introtokmm"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Since all network requests are made from the shared module,
+    it makes sense to add the internet access permission to its manifest. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

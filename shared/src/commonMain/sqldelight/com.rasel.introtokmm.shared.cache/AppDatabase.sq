@@ -1,0 +1,19 @@
+CREATE TABLE Launch (
+id TEXT NOT NULL,
+flightNumber INTEGER NOT NULL PRIMARY KEY,
+name TEXT NOT NULL,
+details TEXT,
+success INTEGER AS Boolean DEFAULT NULL,
+dateUTC TEXT NOT NULL
+);
+
+insertLaunch:
+INSERT INTO Launch(id, flightNumber, name, details, success, dateUTC)
+VALUES(?, ?, ?, ?, ?, ?);
+
+removeAllLaunches:
+DELETE FROM Launch;
+
+selectAllLaunches:
+SELECT Launch.*
+FROM Launch;
